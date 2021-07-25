@@ -3,6 +3,15 @@ font-family: mathias;
 src: url(futura.woff);
 }
 
+@keyframes mathias{
+  from{
+    border: solid blue;
+  }
+  to{
+    border: solid skyblue;
+  }
+}
+
 body {
 	background:linear-gradient(217deg, rgba(166, 55, 55, 0), rgba(255,0,0,0) ), linear-gradient(127deg, rgba(255, 115, 9, 0.8), rgba(0,255,0,0) ), linear-gradient(336deg, rgba(0, 0, 255, 0.92), rgba(0,0,255,0) );
 			background-attachment: fixed;
