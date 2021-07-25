@@ -8,6 +8,9 @@ var oldcount = 0
 var uissety = false
 var sonHD = 'true'
 var photo
+let loop_start = 51.632;
+let loop_end = 53.010 - loop_start
+
 function soundtest(){
 	if (oldcount < photo){
 		UPsound.cloneNode(true).play()
