@@ -9,9 +9,11 @@ var uissety = false
 var sonHD = 'true'
 var photo
 
+let music = new Audio("akaia.mp3");
 let loop_count = 0;
 let loop_start = 51.632;
 let loop_end = 53.010 - loop_start
+let has_started = false;
 
 function soundtest() {
 	if (oldcount < photo) {
@@ -81,17 +83,23 @@ function sonsetting() {
 		sonHD = true
 	}
 }
-
-setInterval(() => {
-	oldcount = loop_count
-	loop_count++
-	photo = loop_count;
-	soundtest()
-	odometer.innerHTML = photo;
-	milestonztest()
-	document.getElementById("coconu").innerHTML = "mathias777";
-}, 5000);
-
-setInterval(() => {
+document.onclick = function(){
+	if (!has_started){
+		has_started = true
+		music.play()
 	
-})
+		setInterval(() => {
+			oldcount = loop_count
+			loop_count++
+			photo = loop_count;
+			soundtest()
+			odometer.innerHTML = photo;
+			milestonztest()
+			document.getElementById("coconu").innerHTML = "mathias777";
+		}, 5000);
+		setInterval(() => {
+
+		}, loop_end * 1000)
+	}
+	
+}
