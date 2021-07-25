@@ -12,7 +12,7 @@ var photo
 let music = new Audio("lesonn/akaia.mp3");
 let loop_count = 0;
 let loop_start = 51.632;
-let loop_end = 53.010 - loop_start
+let loop_end = 53.120 - loop_start
 let has_started = false;
 
 function soundtest() {
@@ -89,8 +89,7 @@ document.onclick = function(){
 		music.play()
 	
 		setInterval(() => {
-			oldcount = loop_count
-			loop_count++
+			
 			photo = loop_count;
 			soundtest()
 			odometer.innerHTML = photo;
@@ -98,7 +97,9 @@ document.onclick = function(){
 			document.getElementById("coconu").innerHTML = "mathias777";
 		}, 5000);
 		setInterval(() => {
-
+			oldcount = loop_count
+			loop_count++
+			music.currentTime = 51.632
 		}, loop_end * 1000)
 	}
 	
