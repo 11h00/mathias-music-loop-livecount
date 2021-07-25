@@ -1,13 +1,7 @@
-const CULER = new XMLHttpRequest();
-var folo = 0;
 var UPsound = new Audio("lesonn/save_up.mp3");
 var DOWNsound = new Audio("lesonn/save_down.mp3");
-var updatecount = 0
-var hashtag
 var oldcount = 0
-var uissety = false
 var sonHD = 'true'
-var photo
 
 let music = new Audio("lesonn/akaia.mp3");
 let loop_count = 0;
