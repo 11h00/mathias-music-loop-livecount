@@ -9,7 +9,7 @@ var uissety = false
 var sonHD = 'true'
 var photo
 
-let music = new Audio("akaia.mp3");
+let music = new Audio("lesonn/akaia.mp3");
 let loop_count = 0;
 let loop_start = 51.632;
 let loop_end = 53.010 - loop_start
